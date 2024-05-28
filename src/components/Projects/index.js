@@ -31,7 +31,6 @@ const Projects = ({openModal,setOpenModal}) => {
             :
             <ToggleButton value="desktop app" onClick={() => setToggle('desktop app')}>DESKTOP APP'S</ToggleButton>
           }
-          <Divider />
 
         </ToggleButtonGroup>
         <CardContainer>
