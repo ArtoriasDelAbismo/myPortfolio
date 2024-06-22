@@ -92,8 +92,8 @@ export const skills = [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
       },
       {
-        name: "Wordpress",
-        image: "https://upload.wikimedia.org/wikipedia/commons/9/93/Wordpress_Blue_logo.png",
+        name: "Linux",
+        image: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Linux_logo.jpg",
       },
       {
         name: "Figma",
@@ -173,7 +173,7 @@ export const projects = [
     description:
       "TierraBot is a web application designed to revolutionize the way businesses interact with their customers. Developed using the MERN stack, this platform uses artificial intelligence to enhance customer service efficiency and satisfaction.",
     image:
-      "",
+      "https://raw.githubusercontent.com/ArtoriasDelAbismo/aiChatbot/master/Frontend/public/chat.png",
     tags: [
       "React Js",
       "MongoDb",
