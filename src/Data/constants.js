@@ -158,7 +158,7 @@ export const projects = [
       "https://github.com/ArtoriasDelAbismo/reactToDoList/blob/master/src/assets/widescreenshot.png?raw=true",
     tags: ["React Js", "Javascript", "HTML", "CSS"],
     category: "web app",
-    github: "https://github.com/ArtoriasDelAbismo/reactToDoList/tree/master",
+    github: "https://github.com/ArtoriasDelAbismo/task-manager",
     webapp: "https://amazing-crumble-5fb3d7.netlify.app/"
   },
 
