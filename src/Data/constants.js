@@ -186,15 +186,29 @@ export const projects = [
   },
   {
     id: 2,
-    title: "SpaceX Agenda",
-    date: "May 2024 - Present",
+    title: "APOD",
+    date: "Mar 2025",
     description:
-      "The SpaceX Agenda is a web application developed using React that provides users with detailed information about all completed and upcoming rocket launches by SpaceX. Utilizing the SpaceX API, this application offers a comprehensive and interactive experience for space enthusiasts and professionals alike.",
+      "This app fetches the NASA Astronomy Picture of the Day (APOD) and stores it in a MongoDB database.",
     image:
-      "",
+      "https://github.com/ArtoriasDelAbismo/APOD/blob/master/src/assets/APOD.png",
     tags: ["React", "NodeJs", "Express Js"],
     category: "web app",
-    github: "",
+    github: "https://github.com/ArtoriasDelAbismo/APOD",
+    webapp: "",
+  },
+
+  {
+    id: 3,
+    title: "Mars Rover App",
+    date: "Mar 2025",
+    description:
+      "A web app that allows users to view mission details and photos for NASA's Perseverance and Curiosity rovers. Built with React and NodeJs using the NASA API.",
+    image:
+      "https://github.com/ArtoriasDelAbismo/mars-rover/blob/master/src/assets/rover-project-1.png",
+    tags: ["React", "NodeJs", "Express Js"],
+    category: "web app",
+    github: "https://github.com/ArtoriasDelAbismo/mars-rover/tree/master",
     webapp: "",
   }
 
