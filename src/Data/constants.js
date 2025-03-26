@@ -185,13 +185,13 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 2,
+    id: 8,
     title: "APOD",
     date: "Mar 2025",
     description:
       "This app fetches the NASA Astronomy Picture of the Day (APOD) and stores it in a MongoDB database.",
     image:
-      "https://github.com/ArtoriasDelAbismo/APOD/blob/master/src/assets/APOD.png",
+      "https://github.com/ArtoriasDelAbismo/APOD/blob/master/src/assets/APOD.png?raw=true",
     tags: ["React", "NodeJs", "Express Js"],
     category: "web app",
     github: "https://github.com/ArtoriasDelAbismo/APOD",
@@ -205,7 +205,7 @@ export const projects = [
     description:
       "A web app that allows users to view mission details and photos for NASA's Perseverance and Curiosity rovers. Built with React and NodeJs using the NASA API.",
     image:
-      "https://github.com/ArtoriasDelAbismo/mars-rover/blob/master/src/assets/rover-project-1.png",
+      "https://github.com/ArtoriasDelAbismo/mars-rover/blob/master/src/assets/rover-project-1.png?raw=true",
     tags: ["React", "NodeJs", "Express Js"],
     category: "web app",
     github: "https://github.com/ArtoriasDelAbismo/mars-rover/tree/master",
