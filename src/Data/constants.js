@@ -148,19 +148,24 @@ export const projects = [
     github: "https://github.com/ArtoriasDelAbismo/wallpaperClock",
     webapp: "https://trackify.duckdns.org",
   },
+  /*
   {
-    id: 0,
-    title: "Task Manager",
-    date: "Apr 2023 - May 2023",
-    description:
-      "A task manager app to keep track of all your daily todos, developed with React JS",
-    image:
-      "https://github.com/ArtoriasDelAbismo/reactToDoList/blob/master/src/assets/widescreenshot.png?raw=true",
-    tags: ["React Js", "Javascript", "HTML", "CSS"],
-    category: "web app",
-    github: "https://github.com/ArtoriasDelAbismo/task-manager",
-    webapp: "https://amazing-crumble-5fb3d7.netlify.app/"
-  },
+     id: 0,
+     title: "Task Manager",
+     date: "Apr 2023 - May 2023",
+     description:
+       "A task manager app to keep track of all your daily todos, developed with React JS",
+     image:
+       "https://github.com/ArtoriasDelAbismo/reactToDoList/blob/master/src/assets/widescreenshot.png?raw=true",
+     tags: ["React Js", "Javascript", "HTML", "CSS"],
+     category: "web app",
+     github: "https://github.com/ArtoriasDelAbismo/task-manager",
+     webapp: "https://amazing-crumble-5fb3d7.netlify.app/"
+   },
+
+
+  */
+  
 
 
 
