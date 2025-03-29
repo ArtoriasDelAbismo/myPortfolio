@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
 import { Snackbar } from '@mui/material';
+import axios from 'axios';
 
 const Container = styled.div`
 display: flex;
@@ -125,20 +125,53 @@ const ContactButton = styled.input`
 
 const Contact = () => {
 
-  //hooks
   const [open, setOpen] = React.useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+
+
   const form = useRef();
 
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_2ax81ke', 'template_s54j29s', form.current, 'loX-FYO5VShuSAecw')
-      .then((result) => {
-        setOpen(true);
-        form.current.reset();
-      }, (error) => {
-        console.log(error.text);
-      });
-  }
+  
+    const { name, email, message } = formData;
+  
+    if (!name || !email || !message) {
+      setStatus("Please fill in all fields.");
+      setOpen(true);
+      return;
+    }
+  
+    try {
+      const response = await axios.post('http://localhost:5000/send-email', formData);
+  
+      if (response.data.status === 'success') {
+        setStatus("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus(response.data.message);
+      }
+    } catch (error) {
+      setStatus("There was an error sending your message.");
+      console.error(error);
+    }
+  
+    setOpen(true); 
+  };
+  
 
 
 
@@ -149,12 +182,14 @@ const Contact = () => {
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" required />
-          <ContactInput placeholder="Your Name" name="from_name" required />
-          <ContactInput placeholder="Subject" name="subject" required />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" required />
+          <ContactInput onChange={handleChange} placeholder="Your Email" name="email" id='email' type='email' value={formData.email} required />
+          <ContactInput onChange={handleChange} placeholder="Your Name" name="name" id='name' required value={formData.name}/>
+          <ContactInput onChange={handleChange} placeholder="Subject" name="subject" id='subject' required/>
+          <ContactInputMessage onChange={handleChange} placeholder="Message" rows="4" name="message" id='message' value={formData.message} required />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
+        {status && <p>{status}</p>}
+
         <Snackbar
           anchorOrigin={ {vertical: 'top', horizontal: 'center'} }
           open={open}
