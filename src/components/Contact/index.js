@@ -156,7 +156,7 @@ const Contact = () => {
     }
   
     try {
-      const response = await axios.post('http://localhost:5000/send-email', formData);
+      const response = await axios.post('https://portfolio-backend-production-0fc2.up.railway.app/send-email', formData);
   
       if (response.data.status === 'success') {
         setStatus("Message sent successfully!");
