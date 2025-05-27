@@ -148,23 +148,23 @@ export const projects = [
     github: "https://github.com/ArtoriasDelAbismo/wallpaperClock",
     webapp: "https://trackify.duckdns.org",
   },
-  /*
+  
   {
      id: 0,
-     title: "Task Manager",
-     date: "Apr 2023 - May 2023",
+     title: "TB Workshop",
+     date: "May 2025",
      description:
-       "A task manager app to keep track of all your daily todos, developed with React JS",
+       "A web application built with React and Supabase to manage workshop service entries",
      image:
-       "https://github.com/ArtoriasDelAbismo/reactToDoList/blob/master/src/assets/widescreenshot.png?raw=true",
-     tags: ["React Js", "Javascript", "HTML", "CSS"],
+       "https://github.com/ArtoriasDelAbismo/string-client-data/blob/master/public/github.png",
+     tags: ["React Js", "Javascript", "HTML", "CSS", "Supabase"],
      category: "web app",
-     github: "https://github.com/ArtoriasDelAbismo/task-manager",
-     webapp: "https://amazing-crumble-5fb3d7.netlify.app/"
+     github: "https://github.com/ArtoriasDelAbismo/string-client-data",
+     webapp: "https://tb-workshop.netlify.app/"
    },
 
 
-  */
+  
   
 
 
@@ -173,10 +173,10 @@ export const projects = [
 
   {
     id: 1,
-    title: "TierraBot",
-    date: "Oct 2023 - Present",
+    title: "Chatbot",
+    date: "Oct 2023",
     description:
-      "TierraBot is a web application designed to revolutionize the way businesses interact with their customers. Developed using the MERN stack, this platform uses artificial intelligence to enhance customer service efficiency and satisfaction.",
+      "Web application designed to revolutionize the way businesses interact with their customers. Developed using the MERN stack, this platform uses artificial intelligence to enhance customer service efficiency and satisfaction.",
     image:
       "https://raw.githubusercontent.com/ArtoriasDelAbismo/aiChatbot/master/Frontend/public/chat.png",
     tags: [
