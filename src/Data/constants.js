@@ -156,7 +156,7 @@ export const projects = [
      description:
        "A web application built with React and Supabase to manage workshop service entries",
      image:
-       "https://github.com/ArtoriasDelAbismo/string-client-data/blob/master/public/github.png",
+       "https://media.githubusercontent.com/media/ArtoriasDelAbismo/string-client-data/refs/heads/master/public/github.png?raw=true",
      tags: ["React Js", "Javascript", "HTML", "CSS", "Supabase"],
      category: "web app",
      github: "https://github.com/ArtoriasDelAbismo/string-client-data",
