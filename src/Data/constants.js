@@ -205,12 +205,12 @@ export const projects = [
 
   {
     id: 3,
-    title: "Mars Rover App",
+    title: "Mars Trek App",
     date: "Mar 2025",
     description:
       "A web app that allows users to view mission details and photos for NASA's Perseverance and Curiosity rovers. Built with React and NodeJs using the NASA API.",
     image:
-      "https://github.com/ArtoriasDelAbismo/mars-rover/blob/master/src/assets/rover-project-1.png?raw=true",
+      "https://media.githubusercontent.com/media/ArtoriasDelAbismo/mars-rover/refs/heads/master/public/github.png?raw=true",
     tags: ["React", "NodeJs", "Express Js"],
     category: "web app",
     github: "https://github.com/ArtoriasDelAbismo/mars-rover/tree/master",
