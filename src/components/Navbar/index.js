@@ -14,7 +14,7 @@ const Navbar = () => {
       <NavbarContainer>
         <NavLogo to='/'>
           <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
-            <DiReact size="3rem" /> <Span>JournaDev</Span>
+            <DiReact size="3rem" /> <Span>Journadev</Span>
           </a>
         </NavLogo>
         <MobileIcon>
