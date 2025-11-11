@@ -6,7 +6,7 @@ export const Bio = {
     "Programmer"
   ],
   description:
-    "I’m driven by curiosity and a deep fascination with space, science, and technology. My work focuses on exploring how software can help us understand and interact with complex systems, whether they’re on Earth or beyond it. I’m part of an analysis working group that uses NASA’s Open Science Data Repository (OSDR) to study and interpret scientific datasets, combining programming, data analysis, and a passion for discovery. In 2025 i joined the NASA Space Apps Hackaton and our team was recognized as global nominees, an experience that strengthened my commitment to open science and interdisciplinary collaboration. At the core, I believe that software is one of the most powerful tools humanity has to expand knowledge and push boundaries—a bridge between data, imagination, and the unknown.",
+    "I’m driven by curiosity and a deep fascination with space, science, and technology. I explore how software can help us understand complex systems, from Earth to beyond. As part of an analysis working group using NASA’s Open Science Data Repository, I work at the intersection of programming, data, and discovery. In 2025, my team was recognized as global nominees in the NASA Space Apps Challenge—an experience that reinforced my belief that software is a bridge between data, imagination, and the unknown.",
 
   github: "https://github.com/ArtoriasDelAbismo",
   resume: "https://folll.io/jeronimojournade/resume",
