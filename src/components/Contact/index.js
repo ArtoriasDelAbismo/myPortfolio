@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { useRef } from 'react';
-import { Snackbar } from '@mui/material';
+import { Snackbar, Alert } from '@mui/material';
 import axios from 'axios';
 
 const Container = styled.div`
@@ -129,10 +129,10 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
   });
   const [status, setStatus] = useState("");
-
 
   const form = useRef();
 
@@ -147,9 +147,9 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
   
-    const { name, email, message } = formData;
+    const { name, email, message, subject } = formData;
   
-    if (!name || !email || !message) {
+    if (!name || !email || !message || !subject) {
       setStatus("Please fill in all fields.");
       setOpen(true);
       return;
@@ -160,9 +160,9 @@ const Contact = () => {
   
       if (response.data.status === 'success') {
         setStatus("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
-        setStatus(response.data.message);
+        setStatus(response.data.message || "Failed to send message.");
       }
     } catch (error) {
       setStatus("There was an error sending your message.");
@@ -174,7 +174,6 @@ const Contact = () => {
   
 
 
-
   return (
     <Container>
       <Wrapper>
@@ -184,7 +183,7 @@ const Contact = () => {
           <ContactTitle>Email Me 🚀</ContactTitle>
           <ContactInput onChange={handleChange} placeholder="Your Email" name="email" id='email' type='email' value={formData.email} required />
           <ContactInput onChange={handleChange} placeholder="Your Name" name="name" id='name' required value={formData.name}/>
-          <ContactInput onChange={handleChange} placeholder="Subject" name="subject" id='subject' required/>
+          <ContactInput onChange={handleChange} placeholder="Subject" name="subject" id='subject' required value={formData.subject}/>
           <ContactInputMessage onChange={handleChange} placeholder="Message" rows="4" name="message" id='message' value={formData.message} required />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
@@ -195,9 +194,11 @@ const Contact = () => {
           open={open}
           autoHideDuration={6000}
           onClose={()=>setOpen(false)}
-          message="Email sent successfully!"
-          severity="success"
-        />
+        >
+          <Alert onClose={()=>setOpen(false)} severity={status.toLowerCase().includes('success') ? 'success' : 'error'} sx={{ width: '100%' }}>
+            {status}
+          </Alert>
+        </Snackbar>
       </Wrapper>
     </Container>
   )
