@@ -97,7 +97,7 @@ export const skills = [
       {
         name: "Netlify",
         image:
-          "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
+          "https://images.icon-icons.com/2699/PNG/512/netlify_logo_icon_169923.png",
       },
       {
         name: "VS Code",
