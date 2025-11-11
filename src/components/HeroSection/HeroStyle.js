@@ -97,13 +97,15 @@ export const Img = styled.img`
   width: 100%;
   height: 100%;
   max-width: 300px;
-  max-height: 400px;
+  max-height: 350px;
   right: 50px;
+  top: -55px;
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
 
   @media (max-width: 960px) {
     right: 0px;
+    top:10px
   }
   @media (max-width: 768px) {
     max-width: 400px;
