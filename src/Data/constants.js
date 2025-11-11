@@ -61,11 +61,14 @@ export const skills = [
         image:
           "https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png",
       },
+      /*
       {
         name: "MySQL",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
       },
+      
+      */
       {
         name: "MongoDB",
         image:
@@ -140,6 +143,40 @@ export const experiences = [
 
 
 export const projects = [
+    {
+    id: 10,
+    title: "Meteor Madness",
+    date: "Oct 2025",
+    description:
+      "A web-based interactive simulation tool to explore asteroid impacts on Earth. This app allows users to visualize, manipulate, and study asteroid parameters in 2D and 3D environments. The main goal of this project is to provide an educational and research-friendly platform for exploring the potential effects of asteroid impacts and ways to mitigate the damage. Users can interactively select asteroids, adjust physical parameters, and simulate impacts to observe their potential consequences.",
+    image:
+      "/mm.png",
+    tags: [
+      "JavaScript",
+      "Python",
+      "Leaflet",
+      "Astro"
+    ],
+    category: "web app",
+    github: "https://github.com/CordeiroM17/Nasa-Project",
+    
+      webapp: "",
+    
+    
+  },
+  {
+     id: 0,
+     title: "TB Workshop",
+     date: "May 2025",
+     description:
+       "A web application built with React and Supabase to manage workshop service entries. Currently in use.",
+     image:
+       "https://media.githubusercontent.com/media/ArtoriasDelAbismo/string-client-data/refs/heads/master/public/github.png?raw=true",
+     tags: ["React Js", "Javascript", "HTML", "CSS", "Supabase"],
+     category: "web app",
+     github: "https://github.com/ArtoriasDelAbismo/string-client-data",
+     webapp: "https://tb-workshop.netlify.app/"
+   },
   {
     id: 9,
     title: "Wallpaper Clock",
@@ -156,22 +193,9 @@ export const projects = [
     ],
     category: "desktop app",
     github: "https://github.com/ArtoriasDelAbismo/wallpaperClock",
-    webapp: "https://trackify.duckdns.org",
+    webapp: "",
   },
   
-  {
-     id: 0,
-     title: "TB Workshop",
-     date: "May 2025",
-     description:
-       "A web application built with React and Supabase to manage workshop service entries",
-     image:
-       "https://media.githubusercontent.com/media/ArtoriasDelAbismo/string-client-data/refs/heads/master/public/github.png?raw=true",
-     tags: ["React Js", "Javascript", "HTML", "CSS", "Supabase"],
-     category: "web app",
-     github: "https://github.com/ArtoriasDelAbismo/string-client-data",
-     webapp: "https://tb-workshop.netlify.app/"
-   },
 
 
   
