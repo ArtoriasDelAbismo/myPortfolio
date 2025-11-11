@@ -148,7 +148,7 @@ export const projects = [
     title: "Meteor Madness",
     date: "Oct 2025",
     description:
-      "A web-based interactive simulation tool to explore asteroid impacts on Earth. This app allows users to visualize, manipulate, and study asteroid parameters in 2D and 3D environments. The main goal of this project is to provide an educational and research-friendly platform for exploring the potential effects of asteroid impacts and ways to mitigate the damage. Users can interactively select asteroids, adjust physical parameters, and simulate impacts to observe their potential consequences.",
+      "Global Nominee of the NASA Space Apps hackaton 2025, Meteor Madness is a web-based interactive simulation tool to explore asteroid impacts on Earth. This app allows users to visualize, manipulate, and study asteroid parameters in 2D and 3D environments. The main goal of this project is to provide an educational and research-friendly platform for exploring the potential effects of asteroid impacts and ways to mitigate the damage. Users can interactively select asteroids, adjust physical parameters, and simulate impacts to observe their potential consequences.",
     image:
       "/mm.png",
     tags: [
