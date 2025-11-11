@@ -125,7 +125,13 @@ const ContactButton = styled.input`
 
 const Contact = () => {
 
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') return;
+    setOpen(false);
+  };
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -146,6 +152,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log('submit()', formData);
   
     const { name, email, message, subject } = formData;
   
@@ -187,13 +194,13 @@ const Contact = () => {
           <ContactInputMessage onChange={handleChange} placeholder="Message" rows="4" name="message" id='message' value={formData.message} required />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
-        {status && <p>{status}</p>}
+        {status && <p style={{color:'#ffff'}}>{status}</p>}
 
         <Snackbar
-          anchorOrigin={ {vertical: 'top', horizontal: 'center'} }
+          anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
           open={open}
           autoHideDuration={6000}
-          onClose={()=>setOpen(false)}
+          onClose={handleClose}
         >
           <Alert onClose={()=>setOpen(false)} severity={status.toLowerCase().includes('success') ? 'success' : 'error'} sx={{ width: '100%' }}>
             {status}
